@@ -453,7 +453,7 @@ const TeamDashboard = () => {
                   Avg resolution time
                 </div>
                 <div style={{ fontSize: '0.75rem', color: 'var(--cds-text-secondary)' }}>
-                  days (team average)
+                  days (team avg)
                 </div>
               </div>
             </Tile>
