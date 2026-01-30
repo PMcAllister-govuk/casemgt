@@ -255,7 +255,7 @@ export default function GraphPage() {
             <div style={{ height: '100vh', position: 'relative' }}>
 
               {/* Top Controls: lens switcher, labels toggle, helper toggle (Carbon) */}
-              <Layer style={{ position: 'absolute', zIndex: 10, top: 16, left: 16 }}>
+              <Layer style={{ position: 'absolute', zIndex: 10, top: 20, left: 16 }}>
                 <Tile style={{ padding: 12, display: 'flex', alignItems: 'center', gap: 12 }}>
                   <ContentSwitcher
                     size="md"
@@ -266,6 +266,7 @@ export default function GraphPage() {
                     <Switch name="type"          text="Qualification type" />
                   </ContentSwitcher>
 
+{/*
                   <Toggle
                     id="toggle-labels"
                     labelText="Show all labels"
@@ -273,8 +274,10 @@ export default function GraphPage() {
                     toggled={showAllLabels}
                     onToggle={(v) => setShowAllLabels(v)}
                   />
+*/}
 
-                  <Button kind="secondary" size="sm" onClick={clearFocus}>Clear focus</Button>
+                  <Button size="md" kind="danger--tertiary" onClick={clearFocus}>Reset focus</Button>
+{/*
                   <Button
                     kind={helperOpen ? 'danger' : 'primary'}
                     size="sm"
@@ -292,6 +295,7 @@ export default function GraphPage() {
                   >
                     Download
                   </Button>
+*/}
                 </Tile>
               </Layer>
 
