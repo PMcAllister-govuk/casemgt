@@ -89,7 +89,7 @@ function AppHeader() {
       )}
       <Header aria-label="Ofqual business process management">
         <HeaderName prefix="Ofqual" href="/">
-          BPM
+          &nbsp;
         </HeaderName>
         <HeaderNavigation aria-label="Ofqual Cases Navigation" style={{ backgroundColor: '#004a4a' }}>
           <HeaderMenuItem href="/dashboard" isActive={location.pathname.startsWith('/dashboard')}>Dashboard</HeaderMenuItem>
